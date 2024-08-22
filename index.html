@@ -31,6 +31,7 @@
             'secondary': '#ABEF5F',
             'text': '#494949',
             'text-secondary': '#737373',
+            'btn-light': 'rgba(171, 239, 95, 0.5)',
           }
         }
       }
@@ -41,13 +42,13 @@
 
   <header class="bg-gradient-to-b from-gray-100 to-gray-50 py-6 mb-12">
     <!-- navbar -->
-     <nav class="md:container mx-auto">
+     <nav class="md:container mx-auto mb-7">
       <div class="navbar">
         <div class="navbar-start">
           <a class="btn btn-ghost text-xl text-basic font-extrabold text-3xl"><ion-icon name="arrow-forward-outline" class="bg-secondary rounded-full p-1 -rotate-45 text-base border border-basic"></ion-icon>
              Rinterio</a>
         </div>
-        <div class="navbar-center hidden lg:flex">
+        <div class="navbar-center flex hidden md:block">
           <ul class="menu menu-horizontal px-1">
             <li class="text-text font-bold"><a>Home</a></li>
             <li class="text-text-secondary"><a>Services</a></li>
@@ -56,25 +57,27 @@
             <li class="text-text-secondary"><a>Contact Us</a></li>
           </ul>
         </div>
-        <div class="navbar-end space-x-2">
+        <div class="navbar-end space-x-2 invisible md:visible">
           <ion-icon class="bg-white rounded-full p-2" name="search-outline"></ion-icon>
           <ion-icon class="bg-white rounded-full p-2" name="cart-outline"></ion-icon>
-          <a class="btn bg-secondary rounded-3xl text-lg font-bold">Book Consult <ion-icon name="arrow-forward-outline" class="bg-basic text-white rounded-full p-1 -rotate-45 text-base"></ion-icon></a>
+          <a class="btn bg-secondary rounded-3xl text-lg font-bold">Book Consult <ion-icon name="arrow-forward-outline" class="bg-basic text-white rounded-full p-1 -rotate-45 text-base"></ion-icon></a>   
         </div>
+        <ion-icon name="reorder-four-outline" class="text-basic w-10 h-12 lg:invisible"></ion-icon> 
+        
       </div>
      </nav>
 
      <!-- hero section-->
 
-     <div class="hero bg-base-200 min-h-screen">
+     <div class="hero md:container mx-auto">
       <div class="hero-content text-center">
-        <div class="max-w-md">
-          <h1 class="text-5xl font-bold">Hello there</h1>
-          <p class="py-6">
-            Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem
-            quasi. In deleniti eaque aut repudiandae et a id nisi.
+        <div class="space-y-5 px-3">
+          <img src="./assets/banner.png" alt="" class="mx-auto">
+          <h1 class="text-6xl font-extrabold">A barn house of this design has a <br> striking appearance</h1>
+          <p class="py-6 md:px-36 text-text">
+            The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents, and large windows that flood the space with natural light.
           </p>
-          <button class="btn btn-primary">Get Started</button>
+          <button class="btn bg-btn-light rounded-3xl">View Details<ion-icon name="arrow-forward-outline" class="bg-secondary rounded-full p-1 -rotate-45 text-base text-basic"></ion-icon></button>
         </div>
       </div>
     </div>
